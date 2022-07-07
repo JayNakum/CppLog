@@ -1,6 +1,6 @@
 // #include "Log.h"
-
-
+// 
+// 
 // int main()
 // {
 //     Log log(Log::LevelTrace);

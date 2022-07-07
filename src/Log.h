@@ -23,7 +23,6 @@ public:
     {
         m_time = time(NULL);
         now = {};
-        info("Log Initialized!");
     }
 
     void setLevel(Level level)
