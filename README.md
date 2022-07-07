@@ -5,13 +5,13 @@ A very basic header only C++ logging library.
 ```
 [current time]: Message
 ```
-Message       | Color
-------------- | -------------
-trace         | White
-info          | Green
-warning       | Yellow
-error         | Red
-critical      | Yellow Background
+Message       | Color  
+------------- | -----------------  
+trace         | White  
+info          | Green  
+warning       | Yellow  
+error         | Red  
+critical      | Yellow Background  
 
 ## Future Plans
 - Allow user to set a pattern format.
