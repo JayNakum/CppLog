@@ -1,4 +1,4 @@
-# CppLog
+# [CppLog](https://github.com/JayNakum/CppLog)
 A very basic header only C++ logging library.  
 
 ### Log Format
