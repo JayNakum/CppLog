@@ -46,7 +46,7 @@ if(LevelCritical)
 ```
 
 
-## [Example](https://github.com/JayNakum/CppLog/blob/main/src/Example.cpp)
+### [src/Example.cpp](https://github.com/JayNakum/CppLog/blob/main/src/Example.cpp)
 ```
 #include "Log.h"
 
