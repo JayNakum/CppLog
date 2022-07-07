@@ -40,7 +40,7 @@ if(LevelCritical)
 ```
 
 
-## [Example](src/example.cpp)
+## [Example](https://github.com/JayNakum/CppLog/blob/main/src/Example.cpp)
 ```
 #include "Log.h"
 
