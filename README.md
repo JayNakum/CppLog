@@ -1,8 +1,6 @@
 # [CppLog](https://github.com/JayNakum/CppLog)
 A very basic header only C++ logging library.  
 
-![example screenshot](https://user-images.githubusercontent.com/45930809/177749151-4ab01926-ba84-443d-9b99-197b170bd7fd.png)
-
 ### Log Format
 ```
 [current time]: Message
@@ -14,6 +12,8 @@ info          | Green
 warning       | Yellow  
 error         | Red  
 critical      | Yellow Background  
+
+![example screenshot](https://user-images.githubusercontent.com/45930809/177749151-4ab01926-ba84-443d-9b99-197b170bd7fd.png)
 
 ## Future Plans
 - Allow user to set a pattern format.
