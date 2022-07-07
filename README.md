@@ -61,3 +61,4 @@ int main()
     log.critical("Critical Message");
 }
 ```
+### Developed by [Jay Nakum](https://jaynakum.github.io/).
