@@ -13,6 +13,12 @@ warning       | Yellow
 error         | Red
 critical      | Yellow Background
 
+## Future Plans
+- Allow user to set a pattern format.
+- Allow user to store logs in a txt file
+  - Daily log files
+  - log message + log description
+
 ## How to use?
 
 It has 5 different log levels : 
