@@ -16,7 +16,9 @@ critical      | Yellow Background
 ![example screenshot](https://user-images.githubusercontent.com/45930809/177749151-4ab01926-ba84-443d-9b99-197b170bd7fd.png)
 
 ## Future Plans
-- Allow user to set a pattern format.
+- Add a pattern system to customize log messages.
+- Make the system more easy to use and wrappable.
+  - Allow an easy way to wrap this logging system into user's logging system
 - Allow user to store logs in a txt file
   - Daily log files
   - log message + log description
