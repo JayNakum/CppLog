@@ -37,9 +37,6 @@ It has 5 different log levels :
 
 You can filter out your log messages based on the level using
 ```
-log.setLevel(LevelInfo);
-```
-```
 if(LevelTrace)
   displays all the log messages
 if(LevelInfo)
@@ -52,20 +49,4 @@ if(LevelCritical)
   displays Critical
 ```
 
-
-### [src/Example.cpp](https://github.com/JayNakum/CppLog/blob/main/src/Example.cpp)
-```
-#include "Log.h"
-
-int main()
-{
-    Log log;
-
-    log.trace("Trace Message");
-    log.info("Info Message");
-    log.warning("Warning Message");
-    log.error("Error Message");
-    log.critical("Critical Message");
-}
-```
 ### Developed by [Jay Nakum](https://jaynakum.github.io/).
