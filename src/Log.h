@@ -3,10 +3,18 @@
 #include <iostream>
 #include <chrono>
 
-class Log
-{
-public:
+class Log {
 
+    static Log* instance;
+
+    Log() {}
+
+public:
+    static Log* getLogger() {
+        if (!instance)
+            instance = new Log();
+        return instance;
+    }
     enum Level : unsigned char
     {
         LevelTrace = 0,
@@ -15,15 +23,6 @@ public:
         LevelError,
         LevelCritical
     };
-
-public:
-
-    Log(Level logLevel = LevelTrace)
-        : m_logLevel(logLevel)
-    {
-        m_time = time(NULL);
-        now = {};
-    }
 
     void setLevel(Level level)
     {
@@ -80,12 +79,12 @@ public:
             localtime_s(&now, &m_time);
             std::cout << "\x1B[31m"
                 << "[" << (now.tm_hour) << ":" << (now.tm_min) << ":" << (now.tm_sec) << "] "
-                      << message
-                      << "\x1B[00m"
-                      << std::endl;
+                << message
+                << "\x1B[00m"
+                << std::endl;
         }
     }
-    
+
     void critical(std::string message)
     {
         if (m_logLevel <= LevelCritical)
@@ -101,11 +100,16 @@ public:
     }
 
 private:
-    Level m_logLevel;
-    time_t m_time;
-    struct tm now;
-
+    Level m_logLevel = LevelTrace;
+    time_t m_time = time(NULL);
+    struct tm now = {};
 };
+
+#define TRACE(message) Log::getLogger()->trace(message);
+#define INFO(message) Log::getLogger()->info(message);
+#define WARN(message) Log::getLogger()->warning(message);
+#define ERROR(message) Log::getLogger()->error(message);
+#define CRITICAL(message) Log::getLogger()->critical(message);
 
 /*
     Name            FG  BG
