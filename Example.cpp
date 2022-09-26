@@ -8,7 +8,7 @@
     ASSERT_LEVEL
 */
 
-#include "Log.h"
+#include "CppLog.h"
 
 int main()
 {
