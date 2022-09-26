@@ -78,7 +78,7 @@ static inline char* timenow();
 #define LOG_CRITICAL(message, ...)
 #endif
 
-#if LOG_LEVEL >= ASSERT_LEVEL
+#if LOG_LEVEL >= ASSERT_LEVEL                                                                                                                // Remove "; __debugBreak()" if you are not using visual studio
 #define ASSERT(condition, message, ...) if (condition) PRINTFUNCTION(stderr, ASSERT_COLOR LOG_FORMAT message END_LOG, LOG_ARGS, ##__VA_ARGS__); __debugbreak()
 #else
 #define ASSERT(condition, message, ...)
