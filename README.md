@@ -1,4 +1,4 @@
-# [CppLog](https://github.com/JayNakum/CppLog)
+# [CppLog](https://github.com/JayNakum/CppLog) ![Star](https://img.shields.io/github/stars/JayNakum/CppLog?style=social)
 A very basic header only C/C++ logging library.  
 
 ## Screenshots
