@@ -14,7 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-#pragma once
+#ifndef CppLog
+#define CppLog
 
 #include <stdio.h>
 #include <time.h>
@@ -78,7 +79,7 @@ static inline char* timenow();
 #endif
 
 #if LOG_LEVEL >= ASSERT_LEVEL
-#define ASSERT(condition, message, ...) if (condition) PRINTFUNCTION(stderr, ASSERT_COLOR LOG_FORMAT message END_LOG, LOG_ARGS, ##__VA_ARGS__)
+#define ASSERT(condition, message, ...) if (condition) PRINTFUNCTION(stderr, ASSERT_COLOR LOG_FORMAT message END_LOG, LOG_ARGS, ##__VA_ARGS__); __debugbreak()
 #else
 #define ASSERT(condition, message, ...)
 #endif
@@ -95,3 +96,5 @@ static inline char* timenow() {
 
     return buffer;
 }
+
+#endif
