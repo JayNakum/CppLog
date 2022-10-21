@@ -1,4 +1,5 @@
-/**
+// [CppLog](https://jaynakum.github.io/CppLog/)
+/*
 Copyright 2022 Jay Nakum
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,12 +36,13 @@ static inline char* timenow();
 #define ASSERT_COLOR    "\x1B[41m\x1B[30m"
 #define END_LOG         "\x1B[00m\n"
 
-#define ASSERT_LEVEL    0x00
-#define CRITICAL_LEVEL  0x01
-#define ERROR_LEVEL     0x02
-#define WARNING_LEVEL   0x03
-#define INFO_LEVEL      0x04
-#define DEBUG_LEVEL     0x05
+#define NO_LOG          0x00
+#define ASSERT_LEVEL    0x01
+#define CRITICAL_LEVEL  0x02
+#define ERROR_LEVEL     0x03
+#define WARNING_LEVEL   0x04
+#define INFO_LEVEL      0x05
+#define DEBUG_LEVEL     0x06
 
 #ifndef LOG_LEVEL
 #define LOG_LEVEL       DEBUG_LEVEL
@@ -78,7 +80,7 @@ static inline char* timenow();
 #define LOG_CRITICAL(message, ...)
 #endif
 
-#if LOG_LEVEL >= ASSERT_LEVEL                                                                                                                // Remove "; __debugBreak()" if you are not using visual studio
+#if LOG_LEVEL >= ASSERT_LEVEL                                                                                                      // Remove "; __debugBreak()" if you are not using visual studio
 #define ASSERT(condition, message, ...) if (condition) PRINTFUNCTION(stderr, ASSERT_COLOR LOG_FORMAT message END_LOG, LOG_ARGS, ##__VA_ARGS__); __debugbreak()
 #else
 #define ASSERT(condition, message, ...)
