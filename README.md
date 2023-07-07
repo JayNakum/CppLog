@@ -5,9 +5,8 @@ A very basic header only C/C++ logging library.
 ![example](https://user-images.githubusercontent.com/45930809/192085591-249148c3-6738-420d-9f0d-82d82f74f4e3.png)
 
 ## Features
-- Multiple types of logs.
+- Multiple types and levels of log messages.
 - Log time, file and line number.
-- Multiple log levels.
 
 ## Get Started
 Include **CppLog.h** and directly use the functions
