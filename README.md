@@ -32,9 +32,4 @@ for a better understanding see **Example.cpp**
 ## Future Plans
 - Logging to a file
 
-# How to contribute?
-- Checkout the existing code base and try to find existing bugs or new features that can be added.
-- Go to the [issues](https://github.com/JayNakum/CppLog/issues) tab, and check for existing issues or add new issues.
-- Refer to [CONTRIBUTING.md](CONTRIBUTING)
-
 ### Developed by [Jay Nakum](https://jaynakum.github.io/).
